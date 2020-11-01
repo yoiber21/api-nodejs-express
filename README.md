@@ -26,4 +26,10 @@ despues de tener la conexion se modelan los datos en model y por cada tabla de l
 
 luego creamos los archivos correspondientes en el controlador para retonar los datos
 
-despues configuramos las rutas lo que va a retornar cada peticion que se haga
+despues configuramos las rutas lo que va a retornar cada peticion que se 
+
+Para instalar todas las dependencias y modulos se ejecuta este comando
+
+npm i y/o npm install
+
+para que se instale todo lo necesario
