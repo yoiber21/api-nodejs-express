@@ -4,7 +4,7 @@ import {json} from 'body-parser'
 import morgan from 'morgan'
 /* se importan las rutas */
 import usuarioRoute from './routes/usuario'
-import eventoRoute from './routes/evento'
+import eventoRoute from './routes/cliente'
 
 
 const app = express()
@@ -16,7 +16,7 @@ app.use(json())// para procesar datos en formato json
 
 //Rutas
 app.use('/api/usuario', usuarioRoute)
-app.use('/api/evento', eventoRoute)
+app.use('/api/cliente', eventoRoute)
 
 
 
