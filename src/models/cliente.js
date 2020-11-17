@@ -13,9 +13,6 @@ const Cliente = sequelize.define('clientes', {
     apellidos: {
         type: Sequelize.TEXT
     },
-    apellidos: {
-        type: Sequelize.TEXT
-    },
     contacto: {
         type: Sequelize.TEXT
     },
