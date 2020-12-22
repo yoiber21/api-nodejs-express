@@ -2,6 +2,8 @@
 
 var _usuario = _interopRequireDefault(require("../models/usuario"));
 
+var _regeneratorRuntime = _interopRequireDefault(require("regenerator-runtime"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -10,9 +12,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /* obtener todos usuarios */
 var obtenerUsuarios = /*#__PURE__*/function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(req, res) {
+  var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime["default"].mark(function _callee(req, res) {
     var usuarios;
-    return regeneratorRuntime.wrap(function _callee$(_context) {
+    return _regeneratorRuntime["default"].wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
@@ -22,7 +24,7 @@ var obtenerUsuarios = /*#__PURE__*/function () {
           case 2:
             usuarios = _context.sent;
             res.status(200).json({
-              data: usuarios
+              datos: usuarios
             });
 
           case 4:
@@ -41,9 +43,9 @@ var obtenerUsuarios = /*#__PURE__*/function () {
 
 
 var obtenerUsuariosId = /*#__PURE__*/function () {
-  var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(req, res) {
+  var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime["default"].mark(function _callee2(req, res) {
     var id, usuario;
-    return regeneratorRuntime.wrap(function _callee2$(_context2) {
+    return _regeneratorRuntime["default"].wrap(function _callee2$(_context2) {
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
@@ -58,7 +60,7 @@ var obtenerUsuariosId = /*#__PURE__*/function () {
           case 3:
             usuario = _context2.sent;
             res.status(200).json({
-              data: usuario
+              datos: usuario
             });
 
           case 5:
@@ -77,10 +79,10 @@ var obtenerUsuariosId = /*#__PURE__*/function () {
 
 
 var CrearUsuario = /*#__PURE__*/function () {
-  var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3(req, res) {
+  var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime["default"].mark(function _callee3(req, res) {
     var _req$body, id, nombres, apellidos, correo, celular, empresa, genero, nuevo;
 
-    return regeneratorRuntime.wrap(function _callee3$(_context3) {
+    return _regeneratorRuntime["default"].wrap(function _callee3$(_context3) {
       while (1) {
         switch (_context3.prev = _context3.next) {
           case 0:
@@ -148,9 +150,9 @@ var CrearUsuario = /*#__PURE__*/function () {
 }();
 
 var eliminarUsuario = /*#__PURE__*/function () {
-  var _ref4 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4(req, res) {
+  var _ref4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime["default"].mark(function _callee4(req, res) {
     var id, fila;
-    return regeneratorRuntime.wrap(function _callee4$(_context4) {
+    return _regeneratorRuntime["default"].wrap(function _callee4$(_context4) {
       while (1) {
         switch (_context4.prev = _context4.next) {
           case 0:
@@ -183,10 +185,10 @@ var eliminarUsuario = /*#__PURE__*/function () {
 }();
 
 var actualizarUsuario = /*#__PURE__*/function () {
-  var _ref5 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee5(req, res) {
+  var _ref5 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime["default"].mark(function _callee5(req, res) {
     var id, _req$body2, nombres, apellidos, correo, celular, empresa, genero, usuario;
 
-    return regeneratorRuntime.wrap(function _callee5$(_context5) {
+    return _regeneratorRuntime["default"].wrap(function _callee5$(_context5) {
       while (1) {
         switch (_context5.prev = _context5.next) {
           case 0:

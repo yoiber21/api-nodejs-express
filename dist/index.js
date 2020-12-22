@@ -16,7 +16,7 @@ var main = /*#__PURE__*/function () {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            port = 3000;
+            port = 8001;
             _context.next = 3;
             return _app["default"].listen(port);
 

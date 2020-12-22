@@ -1,10 +1,10 @@
 import Usuario from '../models/usuario'
-
+import regeneratorRuntime from "regenerator-runtime";
 /* obtener todos usuarios */
 const obtenerUsuarios = async (req, res) => {
     const usuarios = await Usuario.findAll()
     res.status(200).json({
-        data: usuarios
+        datos: usuarios
     })
 }
 /* obtener usuarios por el id */
@@ -16,7 +16,7 @@ const obtenerUsuariosId = async (req, res) => {
         }
     });
     res.status(200).json({
-        data: usuario
+        datos: usuario
     })
 }
 /* crear usuarios */

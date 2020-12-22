@@ -1,5 +1,5 @@
 import Cliente from '../models/cliente'
-
+import regeneratorRuntime from "regenerator-runtime";
 
 const crearCliente = async(req,res) =>{
     const {id, nombres, apellidos, contacto, fecha} = req.body
@@ -63,10 +63,37 @@ const eliminarCliente = async (req,res)=>{
         })
     }
 }
+const actualizarCliente = async (req, res) => {
+    let { id } = req.params
+    const { nombres, apellidos, contacto, fecha  } = req.body
+    try {
+        const cliente = await Cliente.findOne({
+            where: {
+                id
+            }
+        })
+        await cliente.update({
+            nombres,
+            apellidos,
+            contacto,
+            fecha
+        })
+        if (cliente) {
+            res.status(200).json({
+                message: "Cliente actualizado"
+            })
+        }
+    } catch (error) {
+        res.status(500).json({
+            err: error
+        })
+    }
+}
 
 module.exports= {
     crearCliente,
     obtenerClientes,
     obtenerClientesId,
-    eliminarCliente 
+    eliminarCliente,
+    actualizarCliente
 }
